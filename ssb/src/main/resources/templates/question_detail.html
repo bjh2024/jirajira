@@ -1,0 +1,18 @@
+<html layout:decorate="~{layout}">
+<div layout:fragment="content">
+	<h2>제목</h2>
+	<div th:text="${question.subject}"></div>
+	<h2>내용</h2>
+	<div th:text="${question.content}"></div>
+	<ul th:each="answer : ${question.answerList}">
+		<li th:text="${answer.content}"></li>
+	</ul>
+	<form th:action="@{|/answer/create/${question.id}|}" th:object="${answerForm}" method="post">
+		<div role="alert" th:if="${#fields.hasAnyErrors()}">
+			<div th:each="err : ${#fields.allErrors()}" th:text="${err}"></div>
+		</div>
+		<textarea th:field="*{content}" rows="10"></textarea>
+		<input type="submit" value="답변 등록" />
+	</form>
+</div>
+</html>

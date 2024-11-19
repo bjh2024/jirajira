@@ -1,0 +1,13 @@
+<table>
+	<tr>
+		<th>제목</th>
+		<th>작성 시간</th>
+	</tr>
+	<tr th:each="question : ${questionList}">
+		<td>
+			<a th:href="@{|/question/detail/${question.id}|}"
+			   th:text="${question.subject}"></a>
+		</td>
+		<td th:text="${#temporals.format(question.createDate, 'yyyy-MM-dd HH:mm:ss')}"></td>
+	</tr>
+</table>
