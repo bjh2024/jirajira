@@ -343,6 +343,10 @@
 	  width: 100%;
 	  height: 100%;
 	  background-color:var(--ds-blanket, rgba(9, 30, 66, 0.54));/* 반투명 배경 */
+	  display: none;
+}
+.modal.active {
+	display: block;
 }
 .modal_content {
 	background-color: #fff;
@@ -401,4 +405,28 @@
 	font-size: 14px;
 	border-top: 2px solid #091E4224;
 	display: flex;
+}
+.viewer_last_button {
+	display: flex;
+	justify-content: end;
+	height: 72px;
+	padding: 16px 0px 24px; 
+	font-size: 14px;
+}
+.save_button {
+	background-color: #0C66E4;
+	border-radius: 3px;
+	width: 52px;
+	height: 32px;
+	color: white;
+	text-align: center;
+	line-height: 32px;
+}
+.cancle_button {
+	width: 52px;	
+	height: 32px;
+	border-radius: 3px;
+	text-align: center;
+	line-height: 32px;
+	margin-left: 4px;
 }

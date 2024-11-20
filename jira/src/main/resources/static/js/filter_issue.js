@@ -36,6 +36,20 @@ document.querySelector("body").addEventListener("click", function(e) {
     }
 });
 
+document.querySelector("body").addEventListener("click", function(e) {
+	const account = e.target.closest(".filter_save_button");
+	const modal = document.querySelector(".modal");
+	const active = document.querySelector(".modal.active")
+	const modalContent = document.querySelector(".modal_content")
+	console.log(e.target);
+	if(account){
+		modal.classList.add("active");
+	}	
+	if (modal.classList.contains("active") && !modalContent.contains(e.target) && !e.target.closest(".filter_save_button")) {
+	        modal.classList.remove("active");
+	    }
+});
+
 document.querySelector('.category_1').addEventListener('click', function() {
     window.location.href = "filter_issue_table"; 
 });
