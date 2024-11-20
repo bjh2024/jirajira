@@ -43,3 +43,4 @@ document.querySelector('.category_1').addEventListener('click', function() {
 document.querySelector('.category_2').addEventListener('click', function() {
     window.location.href = "filter_issue"; 
 });
+
