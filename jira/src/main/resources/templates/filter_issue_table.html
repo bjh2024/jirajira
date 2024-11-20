@@ -336,7 +336,7 @@
 				<div class="hr_height"></div>
 				<div class="filter_category_choice_2">
 					<div class="hover_line" style="color:#6B778C; cursor: pointer;"><a>초기화</a></div>
-										<div class="hover_line" style="color: #0C66E4; cursor: pointer;"><a>필터 저장</a></div>
+										<div class="hover_line" style="color: #0C66E4; cursor: pointer;"><a class="filter_save_button">필터 저장</a></div>
 				</div>
 			</div>
 			<table class="filter_table">
@@ -498,7 +498,79 @@
 			</td>
 		</tr>
 		</table>
+	<div class="modal">
+			<div class="modal_content">
+				<div class="content_div_1">
+					<span style="font-size: 20px;">필터 저장</span>
+				</div>
+					<div style="height: 20px;">
+						<span style="font-size: 14px; color:#44546F;">필수 필드는 별표로 표시되어 있습니다<span style="color:#AE2E24; margin-left: 6px;">*</span></span>
+						</div>
+						<div class="filter_save_font">
+							이름<span style="color:#AE2E24; margin-left: 3px;">*</span>
+							<input type="text" style="height: 40px; width: 552px; margin-top:4px; padding:8px 6px;">
+						</div>
+						<div class="filter_save_font">
+							설명
+							<textarea class="textArea_1" rows="2"></textarea>
+						</div>
+						<div class="filter_save_font" style="margin-top: 7px;">
+					     	조회자
+						</div>
+						<div class="viewer_div">
+							<div class="viewer_div_1">
+								<div style="width: 2px;"></div>
+								<svg width="24" height="24" viewBox="0 0 24 24" role="presentation"><g fill="currentcolor" fill-rule="evenodd"><path d="M6 14c0-1.105.902-2 2.009-2h7.982c1.11 0 2.009.894 2.009 2.006v4.44c0 3.405-12 3.405-12 0z"></path><circle cx="12" cy="7" r="4"></circle></g></svg>
+								<div style="margin-left: 8px;">비공개</div>
+								<div style="margin-left: 46px;">
+									<svg width="24" height="24" viewBox="0 0 24 24" role="presentation"><path fill="currentcolor" fill-rule="evenodd" d="M8.292 10.293a1.01 1.01 0 0 0 0 1.419l2.939 2.965c.218.215.5.322.779.322s.556-.107.769-.322l2.93-2.955a1.01 1.01 0 0 0 0-1.419.987.987 0 0 0-1.406 0l-2.298 2.317-2.307-2.327a.99.99 0 0 0-1.406 0"></path></svg>
+								</div>
+								<div style="position: absolute; right: -33px; bottom: 5px; font-size: 12px;">나만</div>
+							</div>
+							<div class="viewer_div_2">
+								추가
+							</div>
+						</div>
+							<div class="viewer_list_box">
+								<div style="padding-left: 2px;">
+									<svg width="24" height="24" viewBox="0 0 24 24" role="presentation"><g fill="currentcolor" fill-rule="evenodd"><path d="M6 14c0-1.105.902-2 2.009-2h7.982c1.11 0 2.009.894 2.009 2.006v4.44c0 3.405-12 3.405-12 0z"></path><circle cx="12" cy="7" r="4"></circle></g></svg>
+								</div>
+								<div style="height: 20px; margin-left: 10px;">
+									비공개
+								</div>
+							</div>
+							<div class="filter_save_font" style="margin-top: 12px;">
+							     	편집기
+								</div>
+								<div class="viewer_div">
+									<div class="viewer_div_1">
+										<div style="width: 2px;"></div>
+										<svg width="24" height="24" viewBox="0 0 24 24" role="presentation"><g fill="currentcolor" fill-rule="evenodd"><path d="M6 14c0-1.105.902-2 2.009-2h7.982c1.11 0 2.009.894 2.009 2.006v4.44c0 3.405-12 3.405-12 0z"></path><circle cx="12" cy="7" r="4"></circle></g></svg>
+										<div style="margin-left: 8px;">비공개</div>
+										<div style="margin-left: 46px;">
+											<svg width="24" height="24" viewBox="0 0 24 24" role="presentation"><path fill="currentcolor" fill-rule="evenodd" d="M8.292 10.293a1.01 1.01 0 0 0 0 1.419l2.939 2.965c.218.215.5.322.779.322s.556-.107.769-.322l2.93-2.955a1.01 1.01 0 0 0 0-1.419.987.987 0 0 0-1.406 0l-2.298 2.317-2.307-2.327a.99.99 0 0 0-1.406 0"></path></svg>
+										</div>
+										<div style="position: absolute; right: -33px; bottom: 5px; font-size: 12px;">나만</div>
+									</div>
+									<div class="viewer_div_2">
+										추가
+									</div>
+								</div>
+									<div class="viewer_list_box">
+										<div style="padding-left: 2px;">
+											<svg width="24" height="24" viewBox="0 0 24 24" role="presentation"><g fill="currentcolor" fill-rule="evenodd"><path d="M6 14c0-1.105.902-2 2.009-2h7.982c1.11 0 2.009.894 2.009 2.006v4.44c0 3.405-12 3.405-12 0z"></path><circle cx="12" cy="7" r="4"></circle></g></svg>
+										</div>
+										<div style="height: 20px; margin-left: 10px;">
+											비공개
+										</div>
+									</div>
+							<div class="viewer_last_button">
+								<div class="save_button">저장</div>
+								<div class="cancle_button">취소</div>
+							</div>
+		
+			</div>
+		</div>
 		<script th:src="@{/js/filter_issue.js}"></script>
 	</div>
-
 </html>
